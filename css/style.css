@@ -1,15 +1,15 @@
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 html {
   font-size: 20px;
   font-family: 'Quicksand', sans-serif;
 }
 
-header {
-  overflow: hidden;
-}
+/*============================================================================*/
+/*Header*/
+/*============================================================================*/
+
+header { overflow: hidden; }
 
 .background {
   height: 100vh;
@@ -19,17 +19,6 @@ header {
   animation: coloredZoomOut forwards 2s .2s;
   opacity: 0;
   filter: grayscale(1);
-}
-
-@keyframes coloredZoomOut {
-  0% {
-    opacity: 0;
-    filter: grayscale(5);
-  }
-  100% {
-    opacity: 1;
-    filter: grayscale(0);
-  }
 }
 
 .content {
@@ -43,11 +32,6 @@ header {
   opacity: 0;
   animation: fadeIn forwards 4s .7s;
   color: #fff;
-}
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
 }
 
 .main-nav {
@@ -96,6 +80,25 @@ h3 { text-transform: capitalize; }
   transition: all .2s;
 }
 
-.btn:hover {
-  background: #176291;
+.btn:hover { background: #176291; }
+/*----------------------------------------------------------------------------*/
+/*Header animation*/
+
+@keyframes coloredZoomOut {
+  0% {
+    opacity: 0;
+    filter: grayscale(5);
+  }
+  100% {
+    opacity: 1;
+    filter: grayscale(0);
+  }
 }
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+/*============================================================================*/
+/*Destinations*/
+/*============================================================================*/
