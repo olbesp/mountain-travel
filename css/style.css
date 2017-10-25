@@ -7,8 +7,7 @@ html {
 }
 
 header {
-
-  /*color: #fff;*/
+  overflow: hidden;
 }
 
 .background {
@@ -16,6 +15,20 @@ header {
   background-image: url("../img/wall.jpeg");
   background-size: cover;
   background-position: center;
+  animation: coloredZoomOut forwards 2s .2s;
+  opacity: 0;
+  filter: grayscale(1);
+}
+
+@keyframes coloredZoomOut {
+  0% {
+    opacity: 0;
+    filter: grayscale(5);
+  }
+  100% {
+    opacity: 1;
+    filter: grayscale(0);
+  }
 }
 
 .content {
@@ -25,8 +38,15 @@ header {
   width: 100%;
   display: flex;
   flex-direction: column;
-
   height: 100vh;
+  opacity: 0;
+  animation: fadeIn forwards 4s .7s;
+  /*transition: opacity .5s;*/
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .main-nav {
