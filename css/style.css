@@ -4,6 +4,7 @@
 
 html {
   font-size: 20px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 header {
@@ -41,7 +42,7 @@ header {
   height: 100vh;
   opacity: 0;
   animation: fadeIn forwards 4s .7s;
-  /*transition: opacity .5s;*/
+  color: #fff;
 }
 
 @keyframes fadeIn {
@@ -52,6 +53,21 @@ header {
 .main-nav {
   display: flex;
   justify-content: space-between;
+  padding: 20px;
+  color: #fc891e;
+}
+
+.menu a {
+  padding: 15px;
+  color: #fc891e;
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: all .3s;
+}
+
+.menu a:hover {
+  color: #fff;
+  border: 1px solid #fff;
 }
 
 .heading {
@@ -70,14 +86,16 @@ h3 { text-transform: capitalize; }
   margin: 0 auto;
   padding: 10px;
   font-size: 80%;
+  font-family: 'Quicksand', sans-serif;
   text-transform: uppercase;
+  color: #fff;
   outline: none;
   border: 0;
-  background: #4bb749;
+  background: #42b0f4;
   cursor: pointer;
   transition: all .2s;
 }
 
 .btn:hover {
-  background: #2b7729;
+  background: #176291;
 }
