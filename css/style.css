@@ -172,3 +172,29 @@ section:nth-child(even) { background: #f5f5f5; }
   font-weight: 300;
   line-height: 120%;
 }
+
+/*============================================================================*/
+/*Contact*/
+/*============================================================================*/
+
+.contact form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding-bottom: 50px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+input {
+  flex: 1;
+  margin-right: 20px;
+  padding: 13px;
+  font-family: 'Quicksand', sans-serif;
+  border: 1px solid #42b0f4;
+}
+a.btn {
+  text-decoration: none;
+  width: auto;
+}
