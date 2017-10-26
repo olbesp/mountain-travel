@@ -122,7 +122,7 @@ section .description {
 
 hr {
   width: 200px;
-  border: 1px solid #176291;
+  border: 1px solid #42b0f4;
   margin: 40px auto;
 }
 
@@ -145,3 +145,18 @@ hr {
 .destination .grid li.small { flex-basis: 40%; }
 .destination .grid li.large { flex-basis: 60%; }
 .destination .grid li.giant { flex-basis: 100%; }
+
+/*============================================================================*/
+/*Packages*/
+/*============================================================================*/
+
+section:nth-child(even) { background: #f5f5f5; }
+
+.packages .grid li {
+  padding: 50px;
+  flex-basis: 50%;
+}
+
+.packages .grid li i {
+  color: #42b0f4;
+}
