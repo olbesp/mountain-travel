@@ -160,3 +160,15 @@ section:nth-child(even) { background: #f5f5f5; }
 .packages .grid li i {
   color: #42b0f4;
 }
+
+/*============================================================================*/
+/*Testimonials*/
+/*============================================================================*/
+
+.testimonials .text-content .qoute {
+  max-width: 775px;
+  margin: 50px 0 20px;
+  font-size: 120%;
+  font-weight: 300;
+  line-height: 120%;
+}
