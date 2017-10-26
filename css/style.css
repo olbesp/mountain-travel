@@ -3,6 +3,8 @@
 html {
   font-size: 20px;
   font-family: 'Quicksand', sans-serif;
+  color: #202020;
+  line-height: 125%;
 }
 
 /*============================================================================*/
@@ -30,7 +32,7 @@ header { overflow: hidden; }
   flex-direction: column;
   height: 100vh;
   opacity: 0;
-  animation: fadeIn forwards 4s .7s;
+  animation: fadeIn forwards 4s .9s;
   color: #fff;
 }
 
@@ -85,10 +87,6 @@ h3 { text-transform: capitalize; }
 /*Header animation*/
 
 @keyframes coloredZoomOut {
-  0% {
-    opacity: 0;
-    filter: grayscale(5);
-  }
   100% {
     opacity: 1;
     filter: grayscale(0);
@@ -96,9 +94,51 @@ h3 { text-transform: capitalize; }
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
   100% { opacity: 1; }
 }
+
 /*============================================================================*/
 /*Destinations*/
 /*============================================================================*/
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+section { padding: 20px; }
+
+.destination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+section .title { text-transform: capitalize; }
+section p { max-width: 775px; }
+
+hr {
+  width: 200px;
+  border: 1px solid #176291;
+}
+
+.grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+}
+
+.destination .grid li {
+  height: 350px;
+  padding: 20px;
+  background-clip: content-box;
+  background-size: cover;
+  background-position: center;
+}
+
+.destination .grid li.small { flex-basis: 40%; }
+.destination .grid li.large { flex-basis: 60%; }
+.destination .grid li.giant { flex-basis: 100%; }
