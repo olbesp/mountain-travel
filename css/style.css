@@ -256,9 +256,35 @@ footer p {
   }
 
   .contact form { width: 80%; }
-  
+
   footer {
     display: flex;
     flex-direction: column;
   }
+
+  footer p { text-align: center; }
+}
+
+@media screen and (max-width: 700px) {
+  .destination .grid li.small { flex-basis: 100%; }
+  .destination .grid li.large { flex-basis: 100%; }
+  .destination .grid li { padding: 0 0 20px; }
+
+  .packages .grid li {
+    flex-basis: 100%;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 600px)  {
+  html { font-size: 16px; }
+
+  .main-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu { margin-top: 10px; }
+  .contact form { flex-direction: column; }
+  .contact form input { margin: 0 0 20px; }
 }
